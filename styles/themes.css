@@ -4,3 +4,33 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+@media (prefers-color-scheme: light) {
+  :root.theme-light {
+    --fnt-wgt_mn: 400;
+    --fnt-wgt_tt: 700;
+    --accent-color: #000000;
+    --bg-color: #ffffff;
+    --bg-image: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+      repeating-linear-gradient(#d3d3d3, transparent 2px),
+      linear-gradient(#e7e7e7, #1a1a1a);
+    --txt-stroke: #ffffff;
+    --txt-btn-hover-color: rgba(0, 0, 0, 0.6);
+    --btn-txt-color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.theme-dark {
+    --fnt-wgt_mn: 465;
+    --fnt-wgt_tt: 785;
+    --accent-color: #00cc14;
+    --bg-color: #000000;
+    --bg-image: repeating-linear-gradient(90deg, #000, transparent 2px),
+      repeating-linear-gradient(#000, transparent 2px),
+      linear-gradient(#007f0c, #004306);
+    --txt-stroke: #000000;
+    --txt-btn-hover-color: rgba(0, 204, 20, 0.6);
+    --btn-txt-color: #00cc14;
+  }
+}

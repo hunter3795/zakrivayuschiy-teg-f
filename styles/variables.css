@@ -1,1 +1,29 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --fnt-fmly_mn: "Inter-Variable";
+  --fnt-fmly_ant: "PressStart2P";
+  --fnt-wgt_mn: 400;
+  --fnt-wgt_tt: 700;
+  --fnt-size: 18px;
+  --fnt-size-sl: 14px;
+  --accent-color: #000000;
+  --bg-color: #ffffff;
+  --bg-image: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+    repeating-linear-gradient(#d3d3d3, transparent 2px),
+    linear-gradient(#e7e7e7, #1a1a1a);
+  --wdt-card: 100%;
+  --txt-stroke: #ffffff;
+  --txt-btn-hover-color: rgba(0, 0, 0, 0.6);
+  --btn-txt-color: #ffffff;
+  --bd-hrt-color: red;
+  --flx-direction: column;
+  --sz-icon: 28px;
+}
+
+@media (width>375px) {
+  :root {
+    --wdt-card: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
+    --flx-direction: row;
+    --sz-icon: 21px;
+  }
+}
