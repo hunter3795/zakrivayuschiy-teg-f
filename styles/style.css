@@ -205,6 +205,9 @@
   font-size: var(--fnt-size-sl);
   font-family: 'PressStart2P', sans-serif;
   background-color: transparent;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  cursor: pointer;
 }
 
 .button_save {
@@ -222,12 +225,6 @@
 
 .button:focus {
   outline: none;
-}
-
-.button {
-  transition: box-shadow 0.3s ease;
-  position: relative;
-  cursor: pointer;
 }
 
 .button:focus-visible {
@@ -284,7 +281,7 @@
 
 .main-body,
 .core {
-  transition: all 0.3s;
+  transition: fill 0.3s;
   fill: transparent;
 }
 
