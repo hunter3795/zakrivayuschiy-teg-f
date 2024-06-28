@@ -290,6 +290,8 @@
   inset: 0;
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
+  padding: 0;
+  width: clamp(21.313rem, 20.973rem + 1.488vw, 22.313rem);
 }
 
 .dialog_container {
@@ -302,7 +304,6 @@
   padding-block: 30px;
   text-transform: uppercase;
   line-height: 21px;
-  width: clamp(21.313rem, 20.973rem + 1.488vw, 22.313rem);
 }
 
 .dialog:not([open]) {
