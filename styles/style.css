@@ -245,6 +245,11 @@
   transform: scale(1, 1);
 }
 
+
+.close-button {
+  text-transform: uppercase;
+}
+
 .button__text,
 .floppy-icon {
   position: relative;
@@ -294,7 +299,6 @@ dialog {
   display: grid;
   gap: 30px;
   justify-items: center;
-  transition: opacity 0.3s ease-in-out;
   padding-block: 30px;
   position: fixed;
   inset: 0;
