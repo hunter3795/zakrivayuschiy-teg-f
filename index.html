@@ -353,11 +353,9 @@
             </svg>
             <span class="dialog_text">Вставьте дискету, чтобы продолжить</span>
           </span>
-          <form method="dialog">
-            <button class="close-button button" type="button">
+            <button class="close-button button" type="button" onclick="window['dialog-id'].close();" aria-controls="dialog-id">
               <span class="button__text">ОК</span>
             </button>
-          </form>
         </dialog>
       <script src="./scripts/like.js"></script>
     </main>
