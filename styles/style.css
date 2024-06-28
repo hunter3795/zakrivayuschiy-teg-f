@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--fnt-fmly_mn), sans-serif;
-  font-variation-settings: 'wght' var(--fnt-wgt_mn);
+  font-variation-settings: "wght" var(--fnt-wgt_mn);
   color: var(--accent-color);
   background-color: var(--bg-color);
   background-attachment: fixed;
@@ -32,7 +32,7 @@
 }
 
 .header {
-  font-family: 'PressStart2P', sans-serif;
+  font-family: "PressStart2P", sans-serif;
   display: grid;
   grid-auto-rows: min-content;
   justify-content: center;
@@ -98,7 +98,7 @@
 }
 
 .theme-menu__button::after {
-  content: '';
+  content: "";
   display: block;
   width: 0%;
   height: 2px;
@@ -112,7 +112,7 @@
 }
 
 .theme-menu__button:disabled::before {
-  content: '▶';
+  content: "▶";
   position: absolute;
   pointer-events: none;
   left: 3px;
@@ -131,7 +131,7 @@
 
 .theme-menu__button::after,
 .theme-menu__button:disabled::after {
-  content: '';
+  content: "";
   display: block;
   transition: 0.3s ease;
 }
@@ -143,7 +143,7 @@
 
 .card-title {
   font-size: var(--fnt-size);
-  font-variation-settings: 'wght' var(--fnt-wgt_tt);
+  font-variation-settings: "wght" var(--fnt-wgt_tt);
   margin: 4px 10px 6px;
 }
 
@@ -161,7 +161,7 @@
   z-index: 1;
   top: 25px;
   font-size: var(--fnt-size-sl);
-  font-family: 'PressStart2P', sans-serif;
+  font-family: "PressStart2P", sans-serif;
   right: clamp(0.813rem, 0.548rem + 1.127vw, 1.563rem);
   text-shadow: -1px 0 var(--txt-stroke), 0 1px var(--txt-stroke),
     1px 0 var(--txt-stroke), 0 -1px var(--txt-stroke);
@@ -203,7 +203,7 @@
 .button {
   border: 2px solid var(--accent-color);
   font-size: var(--fnt-size-sl);
-  font-family: 'PressStart2P', sans-serif;
+  font-family: "PressStart2P", sans-serif;
   background-color: transparent;
   transition: box-shadow 0.3s ease;
   position: relative;
@@ -232,7 +232,7 @@
 }
 
 .button::after {
-  content: '';
+  content: "";
   inset: 0;
   position: absolute;
   background-color: var(--accent-color);
@@ -290,8 +290,11 @@
   inset: 0;
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
+}
+
+.dialog_container {
   color: var(--accent-color);
-  font-family: 'PressStart2P', sans-serif;
+  font-family: "PressStart2P", sans-serif;
   font-size: var(--fnt-size-sl);
   display: grid;
   gap: 30px;
