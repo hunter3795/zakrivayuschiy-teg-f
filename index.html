@@ -339,7 +339,7 @@
         <button 
           class="button_save button" 
           type="button"
-          onclick="window['dialog-id'].showModal();"
+          onclick="window['dialog-id'].showModal()"
           aria-controls="dialog-id">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 28" class="floppy-icon">
               <use href="./svg/floppy.svg#floppy-icon"></use>
@@ -353,13 +353,13 @@
             </svg>
             <span class="dialog_text">Вставьте дискету, чтобы продолжить</span>
           </span>
-          <form>
-            <button class="close-button button" type="button" onclick="window['dialog-id'].close();" aria-controls="dialog-id">
+          <form method="dialog">
+            <button class="close-button button" type="button">
               <span class="button__text">ОК</span>
             </button>
           </form>
         </dialog>
-      <script src="./scripts/like.js"></script>
     </main>
+    <script src="./scripts/like.js"></script>
   </body>
 </html>
