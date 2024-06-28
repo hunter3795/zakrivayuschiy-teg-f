@@ -285,7 +285,7 @@
   fill: transparent;
 }
 
-dialog {
+.dialog {
   position: fixed;
   inset: 0;
   border: 2px solid var(--accent-color);
@@ -302,12 +302,12 @@ dialog {
   width: clamp(21.313rem, 20.973rem + 1.488vw, 22.313rem);
 }
 
-dialog:not([open]) {
+.dialog:not([open]) {
   pointer-events: none;
   opacity: 0;
 }
 
-dialog::backdrop {
+.dialog::backdrop {
   background-color: black;
   opacity: 0.75;
 }
