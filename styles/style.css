@@ -246,18 +246,18 @@
 }
 
 .button__text,
-.floppy-icon {
+.floppy {
   position: relative;
   mix-blend-mode: difference;
   z-index: 1;
   color: var(--btn-txt-color);
 }
 
-.floppy-icon {
+.floppy {
   inline-size: var(--sz-icon);
 }
 
-.dialog_content .floppy-icon {
+.dialog_content .floppy {
   inline-size: 39px;
 }
 
@@ -287,7 +287,10 @@
 
 .dialog {
   position: fixed;
-  inset: 0;
+  inset: 0; 
+}
+
+.dialog_container {
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
   color: var(--accent-color);
