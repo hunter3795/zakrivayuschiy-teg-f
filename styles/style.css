@@ -296,6 +296,8 @@ dialog {
   justify-items: center;
   transition: opacity 0.3s ease-in-out;
   padding-block: 30px;
+  position: fixed;
+  inset: 0;
 }
 
 dialog:not([open]) {
