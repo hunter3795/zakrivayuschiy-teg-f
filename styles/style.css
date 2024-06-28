@@ -287,10 +287,7 @@
 
 .dialog {
   position: fixed;
-  inset: 0; 
-}
-
-.dialog_container {
+  inset: 0;
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
   color: var(--accent-color);
