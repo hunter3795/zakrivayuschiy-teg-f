@@ -245,11 +245,6 @@
   transform: scale(1, 1);
 }
 
-
-.close-button {
-  text-transform: uppercase;
-}
-
 .button__text,
 .floppy-icon {
   position: relative;
@@ -302,6 +297,8 @@ dialog {
   padding-block: 30px;
   position: fixed;
   inset: 0;
+  text-transform: uppercase;
+  line-height: 21px;
 }
 
 dialog:not([open]) {
@@ -317,6 +314,7 @@ dialog::backdrop {
 .close-button {
   height: 38px;
   inline-size: clamp(16.063rem, 15.27rem + 3.38vw, 18.313rem);
+  text-transform: uppercase;
 }
 
 .dialog_content {
