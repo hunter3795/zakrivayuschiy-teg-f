@@ -43,7 +43,7 @@
 }
 
 .header,
-.section {
+.card {
   width: var(--wdt-card);
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
@@ -58,10 +58,13 @@
 
 .header_title {
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
+  font-weight: 400;
 }
 
 .header_text {
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .header__theme-menu {
@@ -136,7 +139,8 @@
   transition: 0.3s ease;
 }
 
-.main {
+.main,
+.cards {
   display: grid;
   gap: 50px;
 }
@@ -149,11 +153,14 @@
 
 .container-image {
   position: relative;
+  border-block-start: 2px solid var(--accent-color);
+  border-block-end: 2px solid var(--accent-color);
 }
 
 .image {
   position: relative;
   width: 100%;
+  margin-block-end: -4px;
 }
 
 .text-image {
@@ -180,8 +187,7 @@
   }
 }
 
-.text-list {
-  list-style-type: none;
+.container-text {
   margin: 25px;
   display: grid;
   gap: 27px;
